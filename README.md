@@ -46,7 +46,21 @@ You can deploy this project to Vercel or any other platform that supports Next.j
 
 This project is intended to serve as a template for using the Assistants API in Next.js with [streaming](https://platform.openai.com/docs/assistants/overview/step-4-create-a-run), tool use ([code interpreter](https://platform.openai.com/docs/assistants/tools/code-interpreter) and [file search](https://platform.openai.com/docs/assistants/tools/file-search)), and [function calling](https://platform.openai.com/docs/assistants/tools/function-calling). While there are multiple pages to demonstrate each of these capabilities, they all use the same underlying assistant with all capabilities enabled.
 
+
 The main logic for chat will be found in the `Chat` component in `app/components/chat.tsx`, and the handlers starting with `api/assistants/threads` (found in `api/assistants/threads/...`). Feel free to start your own project and copy some of this logic in! The `Chat` component itself can be copied and used directly, provided you copy the styling from `app/components/chat.module.css` as well.
+
+## Project Structure
+
+This project uses the Next.js `app` directory layout. Important folders and files include:
+
+- `app/assistant-config.ts` – store your Assistant ID here. By default it reads from the `OPENAI_ASSISTANT_ID` environment variable.
+- `app/openai.ts` – initializes the OpenAI client.
+- `app/api/` – API routes for creating assistants, sending messages and managing vector store files.
+- `app/components/` – React components such as the chat interface and file viewer.
+- `app/examples/` – demo pages that showcase basic chat, function calling and file search.
+- `app/utils/` – helper utilities like the sample `getWeather` function.
+- `public/` – static assets including the OpenAI logo.
+- `.env.example` – copy to `.env` and fill in your API key (and optional Assistant ID).
 
 ### Pages
 
