@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.list {
+  background-color: #efefef;
+  border-radius: 12px;
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.selectButton {
+  padding: 4px 12px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.selectButton:hover {
+  background-color: #333;
+}
+
+.details {
+  background-color: #efefef;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  margin-top: 8px;
+}
+
+input {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+  font-size: 1em;
+}
+
+.primaryButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: #333;
+}
+
+.functionList {
+  margin-top: 12px;
+}
+
+.functionList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.functions {
+  margin-top: 20px;
+}
+
+.removeButton {
+  margin-left: 10px;
+  padding: 4px 12px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background-color: #333;
+}
+
+.spacedButton {
+  margin-left: 10px;
+}
