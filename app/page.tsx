@@ -9,6 +9,7 @@ const Home = () => {
     "Function calling": "function-calling",
     "File search": "file-search",
     All: "all",
+    Admin: "/admin",
   };
 
   return (
@@ -17,11 +18,14 @@ const Home = () => {
         Explore sample apps built with Assistants API
       </div>
       <div className={styles.container}>
-        {Object.entries(categories).map(([name, url]) => (
-          <a key={name} className={styles.category} href={`/examples/${url}`}>
-            {name}
-          </a>
-        ))}
+        {Object.entries(categories).map(([name, url]) => {
+          const href = url.startsWith("/") ? url : `/examples/${url}`;
+          return (
+            <a key={name} className={styles.category} href={href}>
+              {name}
+            </a>
+          );
+        })}
       </div>
     </main>
   );

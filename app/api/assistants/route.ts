@@ -2,6 +2,12 @@ import { openai } from "@/app/openai";
 
 export const runtime = "nodejs";
 
+// List all assistants
+export async function GET() {
+  const assistants = await openai.beta.assistants.list();
+  return Response.json(assistants.data);
+}
+
 // Create a new assistant
 export async function POST() {
   const assistant = await openai.beta.assistants.create({
