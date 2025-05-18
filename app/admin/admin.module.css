@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  padding: 6px 16px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.details {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.functionInputs input {
+  margin-right: 6px;
+  padding: 4px;
+}
+
+.message {
+  margin-top: 10px;
+  color: green;
+}
